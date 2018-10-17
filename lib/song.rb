@@ -51,6 +51,14 @@ class Song
     song.name = artist_and_song.split(' - ').last.split('.').first
     song
   end
+  
+  def self.create_from_filename(artist_and_song)
+    song = self.new
+    song.artist_name = artist_and_song.split(' - ').first
+    song.name = artist_and_song.split(' - ').last.split('.').first
+    song.save
+    song    
+  end
 end
 
 blank_space = Song.new_from_filename("Taylor Swift - Blank Space.mp3")
