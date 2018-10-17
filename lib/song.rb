@@ -49,5 +49,6 @@ class Song
     song = self.new
     song.artist_name = artist_and_song.split(' - ').first
     song.name = artist_and_song.split(' - ').last.split('.').first
+    song
   end
 end
