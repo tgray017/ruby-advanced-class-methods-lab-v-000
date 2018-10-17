@@ -46,6 +46,6 @@ class Song
   end
   
   def self.new_from_filename(artist_and_song)
-    artist_and_song.split('-')
+    artist_and_song.split.chomp('-')
   end
 end
