@@ -60,6 +60,10 @@ class Song
     song    
   end
   
+  def self.destroy_all
+    self.all.clear
+  end
+  
 end
 
 blank_space = Song.new_from_filename("Taylor Swift - Blank Space.mp3")
