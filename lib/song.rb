@@ -47,6 +47,7 @@ class Song
   
   def self.new_from_filename(artist_and_song)
     artist_and_song_array = artist_and_song.split(' - ')
-    
+    artist = artist_and_song_array[0]
+    song = artist_and_song_array.last.split('.')
   end
 end
